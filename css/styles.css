@@ -23,15 +23,41 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
+/* параграфи */
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 /* контейнер */
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
+  margin: 0 auto;
+  /* width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-right: 15px;
-  /* outline: auto; */
+  padding-right: 15px; */
+  outline: auto;
 }
+
+/* Tablet screen > = 768 */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+/* Desktop screen >= 1158 */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 /* секції */
 .section {
   padding-top: 10px;
@@ -41,7 +67,11 @@ body {
   /* outline: auto; */
 }
 
-/* header */
+/**
+  |============================
+  | header
+  |============================
+*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -140,6 +170,12 @@ body {
   color: #404bbf;
 }
 
+/**
+  |============================
+  | main
+  |============================
+*/
+
 /* герой */
 .hero {
   padding: 188px 0;
@@ -147,7 +183,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office1.jpg);
+    url(../images/herobg.jpg);
   background-repeat: no-repeat;
   max-width: 1440px;
   margin-left: auto;
@@ -157,6 +193,17 @@ body {
   background-position: center;
   background-color: #2e2f42;
 }
+/* @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg@2x.jpg);
+  }
+} */
 .title.main-title {
   font-weight: 700;
   font-size: 56px;
@@ -205,7 +252,7 @@ body {
 .order-btn:focus {
   background-color: #404bbf;
 }
-/* секція2 майбутнє */
+/* секція2 пропозиції */
 .feature-icons {
   display: flex;
   align-items: center;
@@ -220,19 +267,58 @@ body {
 }
 .feature-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px;  */
+  gap: 72px;
 }
+@media only screen and (min-width: 768px) {
+  .feature-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .feature-list {
+    gap: 24px;
+  }
+}
+.feature-items {
+  /* max-width: 264px; */
+}
+@media only screen and (min-width: 768px) {
+  .feature-items {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .feature-items {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+}
+
 .title.studio-titles {
-  font-weight: 500;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  /* font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;*/
   margin-bottom: 8px;
 }
-.feature-items {
-  max-width: 264px;
+@media only screen and (min-width: 768px) {
+  .title.studio-titles {
+    text-align: left;
+  }
 }
+.feature-text {
+  max-width: 356px;
+}
+
 /* секція3 що ми робимо */
 .samples-section {
   padding-bottom: 120px;
@@ -357,7 +443,12 @@ body {
   fill: var(--filter-btn);
 }
 
-/* підвал */
+/**
+  |============================
+  | footer
+  |============================
+*/
+
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -471,7 +562,11 @@ body {
   text-decoration: none;
 }
 
-/* portfolio */
+/**
+  |============================
+  | portfolio
+  |============================
+*/
 
 /* падінги секції */
 
@@ -575,7 +670,14 @@ body {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
+/**
+  |============================
+  | загальні стилі
+  |============================
+*/
 /* заголовки */
+
 .title {
   color: #2e2f42;
 }
@@ -606,12 +708,6 @@ body {
 .sbtitle-text-transform {
   text-transform: capitalize;
 }
-/* параграфи */
-.text {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
 
 .card-text {
   color: #434455;
@@ -637,7 +733,11 @@ img {
   display: block;
 }
 
-/* modal window */
+/**
+  |============================
+  | modal window 
+  |============================
+*/
 
 .backdrop {
   position: fixed;
@@ -699,6 +799,7 @@ img {
 }
 
 /* modal form */
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -823,3 +924,8 @@ img {
 .textarea-label {
   margin-bottom: 0;
 }
+/**
+  |============================
+  | adaptiv styles
+  |============================
+*/
