@@ -254,13 +254,19 @@ body {
 }
 /* секція2 пропозиції */
 .feature-icons {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
+}
+@media only screen and (min-width: 1158px) {
+  .feature-icons {
+    display: flex;
+  }
 }
 .feature-description {
   padding: 120px 0;
@@ -303,11 +309,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
   color: #2e2f42;
-  letter-spacing: 0.02em;*/
   margin-bottom: 8px;
 }
 @media only screen and (min-width: 768px) {
@@ -315,10 +317,23 @@ body {
     text-align: left;
   }
 }
+@media only screen and (min-width: 1158px) {
+  .title.studio-titles {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+  }
+}
 .feature-text {
   max-width: 356px;
 }
-
+@media only screen and (min-width: 1158px) {
+  .feature-text {
+    font-weight: 400;
+  }
+}
 /* секція3 що ми робимо */
 .samples-section {
   padding-bottom: 120px;
