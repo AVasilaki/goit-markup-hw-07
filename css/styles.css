@@ -269,7 +269,12 @@ body {
   }
 }
 .feature-description {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media only screen and (min-width: 1158px) {
+  .feature-description {
+    padding: 120px 0;
+  }
 }
 .feature-list {
   display: flex;
@@ -344,14 +349,22 @@ body {
 /* сітка елементів */
 .samples-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 /*  команда*/
-.team {
-  padding: 120px 0;
+.team-section {
+  padding: 96px 0;
   background-color: #f4f4fd;
+}
+@media only screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
+}
+.team-container {
 }
 .card-content {
   padding: 32px 0;
@@ -366,6 +379,7 @@ body {
 
   border-radius: 0px 0px 4px 4px;
 }
+
 .teamcard-titles {
   font-weight: 500;
   font-size: 20px;
