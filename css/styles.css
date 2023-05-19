@@ -23,6 +23,25 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
+/* глобальне скидання марджинів заголовків і параграфів */
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* глобальне скидання марджинів списків */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 /* параграфи */
 .text {
   font-weight: 500;
@@ -36,18 +55,14 @@ body {
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-  /* width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; */
+
   outline: auto;
 }
 
 /* Tablet screen > = 768 */
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 736px;
+    max-width: 768px;
   }
 }
 /* Desktop screen >= 1158 */
@@ -252,60 +267,34 @@ body {
 .order-btn:focus {
   background-color: #404bbf;
 }
-/* секція2 пропозиції */
-.feature-icons {
-  display: none;
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-@media only screen and (min-width: 1158px) {
-  .feature-icons {
-    display: flex;
-  }
-}
-.feature-description {
+
+/* секція2 feature */
+
+.feature-section {
   padding: 96px 0;
 }
 @media only screen and (min-width: 1158px) {
-  .feature-description {
+  .feature-section {
     padding: 120px 0;
   }
 }
 .feature-list {
   display: flex;
-  flex-direction: column;
-  /* gap: 24px;  */
-  gap: 72px;
-}
-@media only screen and (min-width: 768px) {
-  .feature-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-}
-@media only screen and (min-width: 1158px) {
-  .feature-list {
-    gap: 24px;
-  }
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 .feature-items {
-  /* max-width: 264px; */
+  width: 396px;
 }
+
 @media only screen and (min-width: 768px) {
   .feature-items {
-    flex-basis: calc((100% - 24px) / 2);
+    width: 356px;
   }
 }
 @media only screen and (min-width: 1158px) {
   .feature-items {
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    width: 264px;
   }
 }
 
@@ -327,7 +316,6 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-
     letter-spacing: 0.02em;
   }
 }
@@ -339,7 +327,27 @@ body {
     font-weight: 400;
   }
 }
-/* секція3 що ми робимо */
+.feature-icons {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 1158px) {
+  .feature-icons {
+    display: flex;
+  }
+}
+
+/**
+  |============================
+  | section3 - what are we doing
+  |============================
+*/
+
 .samples-section {
   padding-bottom: 120px;
 }
@@ -354,7 +362,13 @@ body {
   gap: 24px;
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
-/*  команда*/
+
+/**
+  |============================
+  | section4 - team
+  |============================
+*/
+
 .team-section {
   padding: 96px 0;
   background-color: #f4f4fd;
@@ -394,7 +408,13 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-/* customers links */
+
+/**
+  |============================
+  | section5 - customers
+  |============================
+*/
+
 .section-customers {
   padding: 120px 0;
 }
@@ -740,26 +760,6 @@ body {
 
 .card-text {
   color: #434455;
-}
-
-/* глобальне скидання марджинів заголовків і параграфів */
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* глобальне скидання марджинів списків */
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
 }
 
 /**
