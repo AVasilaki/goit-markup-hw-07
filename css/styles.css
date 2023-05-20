@@ -55,7 +55,6 @@ img {
   max-width: 428px;
   padding: 0 16px;
   margin: 0 auto;
-
   outline: auto;
 }
 
@@ -357,7 +356,7 @@ img {
 /* сітка елементів */
 .samples-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 24px;
   flex-basis: calc((100% - 2 * 24px) / 3);
@@ -379,6 +378,28 @@ img {
   }
 }
 .team-container {
+  /* max-width: 264px; */
+  /* margin-left: auto; */
+}
+/* @media only screen and (min-width: 768px) {
+   {
+    max-width: ;
+  }
+} */
+.team-list {
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .team-list {
+    max-width: 552px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team-list {
+    max-width: 1158px;
+  }
 }
 .card-content {
   padding: 32px 0;
