@@ -192,12 +192,13 @@ img {
 
 /* герой */
 .hero-section {
+  /* display: none; */
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/herobg.jpg);
+    url(../images/bg/herobgmobile.jpg);
   background-repeat: no-repeat;
   max-width: 1440px;
   margin-left: auto;
@@ -206,20 +207,61 @@ img {
   background-position: center;
   background-color: #2e2f42;
 }
-/* @media screen and (min-device-pixel-ratio: 2),
+@media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .hero {
+  .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/herobg@2x.jpg);
+      url(../images/bg/herobgmobile@2x.jpg);
   }
-} */
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/herobgtablet.jpg);
+  }
+}
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/herobgtablet@2x.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herobg.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg/herobg@2x.jpg);
+  }
+}
 .title.main-title {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   max-width: 496px;
   text-align: center;
@@ -229,6 +271,11 @@ img {
   margin-bottom: 48px;
   /* WHITE */
   color: #ffffff;
+}
+@media only screen and (min-width: 768px) {
+  .title.main-title {
+    font-size: 56px;
+  }
 }
 /* кнопки */
 .button {
