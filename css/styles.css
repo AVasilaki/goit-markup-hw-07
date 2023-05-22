@@ -122,7 +122,7 @@ img {
   align-items: center;
 }
 .nav-list {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 40px;
 }
@@ -165,6 +165,7 @@ img {
   gap: 40px;
 }
 .contacts {
+  display: none;
   font-style: normal;
   margin-left: auto;
 }
@@ -184,6 +185,106 @@ img {
   color: #404bbf;
 }
 
+/**
+  |============================
+  | mobile menu
+  |============================
+*/
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 35px 40px 40px;
+  background-color: white;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.nav-list-mobil {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--btn-color);
+}
+.link.contacts-link.tel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--btn-color);
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.link.contacts-link.email {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+  letter-spacing: 0.02em;
+  padding: 0;
+}
 /**
   |============================
   | main
