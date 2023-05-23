@@ -300,6 +300,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/bg/herobgmobile.jpg);
+
   background-repeat: no-repeat;
   max-width: 1440px;
   margin-left: auto;
@@ -308,9 +309,9 @@ img {
   background-position: center;
   background-color: #2e2f42;
 }
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -319,8 +320,7 @@ img {
       url(../images/bg/herobgmobile@2x.jpg);
   }
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 468px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -328,36 +328,36 @@ img {
       ),
       url(../images/bg/herobgtablet.jpg);
   }
-}
-@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg/herobgtablet@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg/herobgtablet@2x.jpg);
+    }
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 769px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/herobg.jpg);
+      url(../images/bg/herobg.jpg);
   }
-}
-@media only screen and (min-width: 1158px) and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg/herobg@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg/herobg@2x.jpg);
+    }
   }
 }
 .title.main-title {
