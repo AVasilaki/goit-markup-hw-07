@@ -220,6 +220,8 @@ img {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -241,7 +243,7 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: black;
 }
 
 .mobile-menu .link {
@@ -254,6 +256,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: auto;
+}
+.mobile-menu-contacts {
+  margin-bottom: 48px;
 }
 .mobile-menu-link {
   font-weight: 700;
@@ -275,6 +281,8 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding: 0;
+}
+.tel {
   margin-bottom: 40px;
 }
 .link.contacts-link.email {
@@ -284,6 +292,10 @@ img {
   color: var(--main-text-color);
   letter-spacing: 0.02em;
   padding: 0;
+}
+.footer-icons-list.mobile {
+  /* justify-content: space-between; */
+  gap: 56px;
 }
 /**
   |============================
