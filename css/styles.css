@@ -328,7 +328,7 @@ img {
   padding: 0;
 }
 .footer-icons-list.mobile {
-  gap: 56px;
+  justify-content: space-between;
 }
 /**
   |============================
