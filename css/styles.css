@@ -320,7 +320,6 @@ img {
   padding: 0;
 }
 .footer-icons-list.mobile {
-  /* justify-content: space-between; */
   gap: 56px;
 }
 /**
@@ -331,7 +330,6 @@ img {
 
 /* герой */
 .hero-section {
-  /* display: none; */
   padding: 188px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -547,7 +545,6 @@ img {
 /* сітка елементів */
 .samples-list {
   display: flex;
-  /* justify-content: center; */
   flex-wrap: wrap;
   gap: 24px;
   flex-basis: calc((100% - 2 * 24px) / 3);
@@ -568,15 +565,7 @@ img {
     padding: 120px 0;
   }
 }
-.team-container {
-  /* max-width: 264px; */
-  /* margin-left: auto; */
-}
-/* @media only screen and (min-width: 768px) {
-   {
-    max-width: ;
-  }
-} */
+
 .team-list {
   max-width: 264px;
   margin-left: auto;
@@ -746,17 +735,12 @@ img {
   background-color: var(--footer-hover-btn);
 }
 .footer-container {
-  /* display: flex; */
-  /* flex-direction: column;
-  gap: 72px;
-  align-items: center; */
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
     display: flex;
-    /* flex-direction: row; */
-    /* gap: 0; */
+
     align-items: baseline;
     text-align: left;
   }
@@ -829,10 +813,6 @@ img {
 
 /* footer subscribe */
 
-.footer-subscribe {
-  /* flex-direction: column; */
-  /* gap: 16px; */
-}
 @media only screen and (min-width: 1158px) {
   .footer-subscribe {
     /* display: flex; */
@@ -1263,8 +1243,3 @@ img {
 .textarea-label {
   margin-bottom: 0;
 }
-/**
-  |============================
-  | adaptiv styles
-  |============================
-*/
