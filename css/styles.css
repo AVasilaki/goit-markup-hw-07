@@ -295,18 +295,26 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
 }
+.mobile-menu-link.activ {
+  color: var(--nav-link-hover);
+}
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--btn-color);
 }
 .link.contacts-link.tel {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.11;
   color: var(--btn-color);
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding: 0;
+}
+@media only screen and (max-width: 360px) {
+  .link.contacts-link.tel {
+    font-size: 25px;
+  }
 }
 .tel {
   margin-bottom: 40px;
