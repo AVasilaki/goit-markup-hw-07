@@ -737,24 +737,23 @@ img {
   |============================
 */
 
+/* section footer */
+
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   /* NAVY BLUE */
   background: #2e2f42;
 }
 
-.footer-hover:hover,
-.footer-hover:focus {
-  background-color: var(--footer-hover-btn);
-}
+/* container footer*/
+
 .footer-container {
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-container {
     display: flex;
-
     align-items: baseline;
     text-align: left;
   }
@@ -765,20 +764,9 @@ img {
     flex-wrap: wrap;
   }
 }
-.footer-icons-list {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 72px;
-}
-.list.footer-icons-list.mobile {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 1158px) {
-  .footer-icons-list {
-    margin-bottom: 0;
-  }
-}
+
+/* footer info blok */
+
 .footer-info {
   text-align: center;
   margin-bottom: 72px;
@@ -811,8 +799,19 @@ img {
   margin-bottom: 16px;
   margin-right: 0;
 }
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .logo-footer {
+  }
+} */
+
+/* footer social media blok */
+
+.footer-media {
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-media {
+    margin-bottom: 0;
   }
 }
 .footer-title {
@@ -825,14 +824,35 @@ img {
   margin-bottom: 16px;
 }
 
-/* footer subscribe */
+.footer-icons-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  /* margin-bottom: 72px; */
+}
+.footer-hover:hover,
+.footer-hover:focus {
+  background-color: var(--footer-hover-btn);
+}
+
+/* footer subscribe form*/
 
 @media only screen and (min-width: 1158px) {
   .footer-subscribe {
-    /* display: flex; */
-
-    align-items: end;
     margin-left: auto;
+  }
+}
+.footer-subscribe-name {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-input-btn {
+    display: flex;
   }
 }
 .footer-subscribe-btn {
@@ -853,11 +873,6 @@ img {
   transition: background-color var(--o-transition);
   margin: 0 auto;
 }
-@media only screen and (min-width: 768px) {
-  .footer-input-btn {
-    display: flex;
-  }
-}
 
 .foofer-subscribe-vector {
   height: 24px;
@@ -866,14 +881,6 @@ img {
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: var(--footer-hover-btn);
-}
-.footer-subscribe-name {
-  display: block;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 16px;
 }
 
 .footer-subsckribe-mail {
