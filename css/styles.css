@@ -555,6 +555,10 @@ img {
   display: none;
   padding-bottom: 120px;
 }
+.doing-container {
+  padding-left: 0;
+  padding-right: 0;
+}
 @media only screen and (min-width: 1158px) {
   .samples-section {
     display: block;
@@ -568,9 +572,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+.items-doing {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
-
 /**
   |============================
   | section4 - team
