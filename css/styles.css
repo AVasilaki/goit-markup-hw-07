@@ -556,8 +556,9 @@ img {
   padding-bottom: 120px;
 }
 .doing-container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* max-width: 1128px; */
 }
 @media only screen and (min-width: 1158px) {
   .samples-section {
